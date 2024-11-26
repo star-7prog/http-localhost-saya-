@@ -1,0 +1,242 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* Light gray background */
+    color: #2c3e50; /* Dark blue-gray text */
+}
+
+/* Header Styles */
+header {
+    background: #2980b9; /* Bright blue */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ecf0f1; /* Light gray on hover */
+    transform: scale(1.1);
+}
+
+.top-btn .nav-btn {
+    background: #ecf0f1; /* Light gray */
+    color: #2980b9; /* Bright blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.top-btn .nav-btn:hover {
+    background: #bdc3c7; /* Slightly darker gray on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+    background: #ffffff; /* White background */
+}
+
+.home-content {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #2980b9; /* Bright blue */
+}
+
+.home-content h3 span {
+    color: #2c3e50; /* Dark blue-gray */
+}
+
+.home-content p {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin-right: 15px;
+    color: #2980b9; /* Bright blue */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ecf0f1; /* Light gray on hover */
+}
+
+.btn {
+    background: #2980b9; /* Bright blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1abc9c; /* Teal on hover */
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 50px 100px;
+    background: #ffffff; /* White background */
+    margin-top: 20px; /* Space above the contact section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: auto; /* Center the content */
+    text-align: center; /* Center text */
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    color: #2980b9; /* Bright blue */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-content p {
+    margin-bottom: 30px; /* Space below the paragraph */
+    color: #2c3e50; /* Dark blue-gray */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between fields */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+.contact .btn {
+    align-self: center; /* Center the button */
+    background: #2980b9; /* Bright blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: #1abc9c; /* Teal on hover */
+}
+
+
+/* Profile Image */
+.home-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 50px 100px;
+    background: #f0f4f8; /* Light gray */
+}
+
+.portfolio .heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #2980b9; /* Bright blue */
+}
+
+.portfolio .heading span {
+    color: #2c3e50; /* Dark blue-gray */
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    background: white; /* White background for each portfolio item */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px); /* 4 items per row */
+    transition: transform 0.3s;
+}
+
+.row:hover {
+    transform: translateY(-10px);
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #2980b9; /* Bright blue border */
+}
+
+.main-row {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-text h1,
+.row-text h2,
+.row-text h5 

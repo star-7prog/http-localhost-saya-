@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Surya</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#home" class="logo">Rahmad Panji Surya</a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="#contact" class="nav-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+   <section class="contact">
+    <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+        <!-- Menampilkan Respons -->
+        <?php if (!empty($response)): ?>
+            <p class="response-message"><?php echo htmlspecialchars($response); ?></p>
+        <?php endif; ?>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/star-7prog"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/Rahmad Panji Surya"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/rahmadpanjisurya/"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Surya@2024
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
